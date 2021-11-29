@@ -1,6 +1,2 @@
-export DATABASE='eventos_desafio_multiplas_apis'
-export USER='root' 
-export PASSWORD='root'
-export HOST='localhost'
-
+NODE_ENV='production'
 npm start
