@@ -1,6 +1,6 @@
 'use strict';
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require("../config/sequilize_config")
+const sequelize = require("../config/sequelize_config")
 
 class Evento extends Model {
   static associate(models) { }
