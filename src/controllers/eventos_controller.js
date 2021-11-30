@@ -1,8 +1,9 @@
-const Evento = require('../models/evento')
+const Evento = require('../models/evento');
 
 module.exports = class EventosController{
   static async index(req, res, next) {
-    res.status(200).send([]);
+    let eventos = await Evento.findAll()
+    res.status(200).send(eventos);
   }
 }
 
