@@ -15,6 +15,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./public/swagger.json');
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 app.use(function(req, res, next) {
   next(createError(404));
 });
