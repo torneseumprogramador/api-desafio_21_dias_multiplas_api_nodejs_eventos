@@ -157,7 +157,7 @@
         "tags": [
           "eventos"
         ],
-        "summary": "Apaga um evento",
+        "summary": "Apagar um evento",
         "description": "Endpoint para apagar um evento específico",
         "consumes": [
           "application/json"
