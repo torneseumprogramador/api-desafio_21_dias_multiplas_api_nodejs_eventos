@@ -9,6 +9,11 @@ module.exports = class EventosController{
   static async get(req, res, next) {
     const id = req.params.id;
     let evento = await Evento.findOne({ where: {id: id} });
+
+    if(!evento) return res.status(404).send({
+      mensagem: "O id de evento enviado não existe"
+    });
+
     res.status(200).send(evento);
   }
 
