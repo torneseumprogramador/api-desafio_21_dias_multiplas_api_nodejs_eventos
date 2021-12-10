@@ -1,6 +1,3 @@
-docker stop desafio_multiplasapis_nodejs_eventos
-docker rm desafio_multiplasapis_nodejs_eventos
-
 docker build -t didox/desafio_multiplasapis_nodejs_eventos -f Dockerfile .
 docker tag didox/desafio_multiplasapis_nodejs_eventos hub.docker.com/r/didox/desafio_multiplasapis_nodejs_eventos
 docker push didox/desafio_multiplasapis_nodejs_eventos
